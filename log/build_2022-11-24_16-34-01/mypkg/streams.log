@@ -1,0 +1,30 @@
+[0.541s] Invoking command in '/home/ogishima/ros2_ws/src/mypkg': PYTHONPATH=/home/ogishima/ros2_ws/src/mypkg/install/mypkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/mypkg build --build-base /home/ogishima/ros2_ws/src/mypkg/build/mypkg/build install --prefix /home/ogishima/ros2_ws/src/mypkg/install/mypkg --record /home/ogishima/ros2_ws/src/mypkg/build/mypkg/install.log --single-version-externally-managed
+[0.743s] running egg_info
+[0.744s] writing build/mypkg/mypkg.egg-info/PKG-INFO
+[0.744s] writing dependency_links to build/mypkg/mypkg.egg-info/dependency_links.txt
+[0.744s] writing entry points to build/mypkg/mypkg.egg-info/entry_points.txt
+[0.745s] writing requirements to build/mypkg/mypkg.egg-info/requires.txt
+[0.745s] writing top-level names to build/mypkg/mypkg.egg-info/top_level.txt
+[0.746s] reading manifest file 'build/mypkg/mypkg.egg-info/SOURCES.txt'
+[0.749s] writing manifest file 'build/mypkg/mypkg.egg-info/SOURCES.txt'
+[0.749s] running build
+[0.749s] running build_py
+[0.749s] copying mypkg/talker.py -> /home/ogishima/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[0.750s] copying mypkg/listener.py -> /home/ogishima/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[0.750s] running install
+[0.750s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.750s]   warnings.warn(
+[0.750s] running install_lib
+[0.751s] copying /home/ogishima/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg/talker.py -> /home/ogishima/ros2_ws/src/mypkg/install/mypkg/lib/python3.10/site-packages/mypkg
+[0.751s] copying /home/ogishima/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg/listener.py -> /home/ogishima/ros2_ws/src/mypkg/install/mypkg/lib/python3.10/site-packages/mypkg
+[0.752s] byte-compiling /home/ogishima/ros2_ws/src/mypkg/install/mypkg/lib/python3.10/site-packages/mypkg/talker.py to talker.cpython-310.pyc
+[0.753s] byte-compiling /home/ogishima/ros2_ws/src/mypkg/install/mypkg/lib/python3.10/site-packages/mypkg/listener.py to listener.cpython-310.pyc
+[0.753s] running install_data
+[0.754s] running install_egg_info
+[0.756s] removing '/home/ogishima/ros2_ws/src/mypkg/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info' (and everything under it)
+[0.756s] Copying build/mypkg/mypkg.egg-info to /home/ogishima/ros2_ws/src/mypkg/install/mypkg/lib/python3.10/site-packages/mypkg-0.0.0-py3.10.egg-info
+[0.758s] running install_scripts
+[0.778s] Installing listener script to /home/ogishima/ros2_ws/src/mypkg/install/mypkg/lib/mypkg
+[0.778s] Installing talker script to /home/ogishima/ros2_ws/src/mypkg/install/mypkg/lib/mypkg
+[0.779s] writing list of installed files to '/home/ogishima/ros2_ws/src/mypkg/build/mypkg/install.log'
+[0.803s] Invoked command in '/home/ogishima/ros2_ws/src/mypkg' returned '0': PYTHONPATH=/home/ogishima/ros2_ws/src/mypkg/install/mypkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/mypkg build --build-base /home/ogishima/ros2_ws/src/mypkg/build/mypkg/build install --prefix /home/ogishima/ros2_ws/src/mypkg/install/mypkg --record /home/ogishima/ros2_ws/src/mypkg/build/mypkg/install.log --single-version-externally-managed
