@@ -1,6 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from color_msgs.msg import Color
+import random
 
 class Talker():
    def __init__(self, node):
@@ -10,10 +11,10 @@ class Talker():
 
    def cb(self):
       msg = Color()
-      msg.red = self.n
-      msg.green = 0
-      msg.blue = 0
-      msg.color_code = "000000"
+      msg.red = random.randint(0, 255)
+      msg.green = random.randint(0, 255)
+      msg.blue = random.randint(0, 255)
+      msg.color_code = str(format(msg.red, 'x')) + str(format(msg.green, 'x')) + str(format(msg.blue, 'x'))
       self.pub.publish(msg)
       self.n += 1
 
