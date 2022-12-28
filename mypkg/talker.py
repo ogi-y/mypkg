@@ -15,7 +15,7 @@ class Talker():
       msg.blue = 0
       msg.color_code = "000000"
       self.pub.publish(msg)
-      self.n += 2
+      self.n += 1
 
 def main():
    rclpy.init()
