@@ -9,14 +9,13 @@ class Talker():
       node.create_timer(0.5, self.cb)
 
    def cb(self):
-      global n
       msg = Color()
       msg.red = 0
       msg.green = 0
       msg.blue = 0
       msg.color_code = "000000"
       self.pub.publish(msg)
-      n += 1
+      self.n += 2
 
 def main():
    rclpy.init()
