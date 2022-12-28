@@ -10,7 +10,7 @@ class Talker():
 
    def cb(self):
       msg = Color()
-      msg.red = 0
+      msg.red = self.n
       msg.green = 0
       msg.blue = 0
       msg.color_code = "000000"

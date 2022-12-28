@@ -4,9 +4,10 @@ from color_msgs.msg import Color
 
 def cb(msg):
     global node
-    node.get_logger().info("Listenaaa: %d" % msg.data)
+    node.get_logger().info("Listen: %s" % msg)
 
 rclpy.init()
 node = Node("listener")
 pub = node.create_subscription(Color, "color", cb, 10)
+
 rclpy.spin(node)
