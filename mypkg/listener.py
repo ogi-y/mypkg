@@ -4,7 +4,7 @@ from color_msgs.msg import Color
 
 def cb(msg):
     global node
-    node.get_logger().info("Listen: %s" % msg)
+    node.get_logger().info("Listenaaa: %s" % msg)
 
 rclpy.init()
 node = Node("listener")
