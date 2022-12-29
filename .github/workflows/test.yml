@@ -24,5 +24,6 @@ jobs:
           rsync -av ./ /root/ros2_ws/src/mypkg/
           cd /root/ros2_ws
           rosdep update
+          rosdep install ament_cmake
           rosdep install -i --from-path src --rosdistro humble -y
           bash -xv ./src/mypkg/mypkg/test/test.bash /root
