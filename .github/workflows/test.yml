@@ -6,16 +6,16 @@ jobs:
     container: ryuichiueda/ubuntu22.04-ros2:latest
     steps:
       - name: Checkout
-        working-directory: /root/ros2_ws/src/
+        working-directory: /root/ros2_ws/
         uses: actions/checkout@v3
         with:
-          path: mypkg
+          path: src/mypkg
       - name: Checkout another repo
-        working-directory: /root/ros2_ws/src/
+        working-directory: /root/ros2_ws/
         uses: actions/checkout@v3
         with:
           repository: ogi-y/color_msgs
-          path: color_msgs
+          path: src/color_msgs
       
       - name: Check directory
         run: |
