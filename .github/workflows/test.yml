@@ -5,13 +5,13 @@ jobs:
     runs-on: ubuntu-22.04
     container: ryuichiueda/ubuntu22.04-ros2:latest
     steps:
-      - name: Checkout tools repo
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+      - name: Checkout another repo
         uses: actions/checkout@v3
         with:
           repository: ogi-y/color_msgs
-          path: main
-      - uses: actions/checkout@v2
-      - name: build and test
         run: |
           rsync -av ./ /root/ros2_ws/src/mypkg/
           cd /root/ros2_ws
