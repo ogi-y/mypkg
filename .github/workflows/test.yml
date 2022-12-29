@@ -19,4 +19,6 @@ jobs:
           cd /root/ros2_ws
           rosdep update
           rosdep install -i --from-path src --rosdistro humble -y
-          bash -xv ./src/mypkg/test/test.bash /root
+          cd /src/mypkg/test
+          chmod +x test.bash
+          bash -xv ./test.bash /root
