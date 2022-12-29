@@ -18,6 +18,7 @@ jobs:
       - name: Change working directory
         working-directory: /root/ros2_ws/
         run: |
+          cd src
           ls -l
           
       - run: |
