@@ -23,11 +23,11 @@ jobs:
       - name: Check directory
         run: |
           ls -l
-          cd src
+          cd src/mypkg
           ls -l
           
       - run: |
-          source ~/.bashrc
+          source /root/.bashrc
           ls -l
           rsync -av ./ /root/ros2_ws/src/mypkg/
           cd /root/ros2_ws
