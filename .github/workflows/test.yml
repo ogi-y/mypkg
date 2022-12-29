@@ -8,12 +8,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          repository: ogi-y/color_msgs
-          path: color_msgs
+          path: mypkg
       - name: Checkout another repo
         uses: actions/checkout@v3
         with:
-          path: mypkg
+          repository: ogi-y/color_msgs
+          path: color_msgs
       - run: |
           rsync -av ./ /root/ros2_ws/src/mypkg/
           cd /root/ros2_ws
