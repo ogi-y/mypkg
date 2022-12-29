@@ -16,12 +16,11 @@ jobs:
           path: color_msgs
           
       - run: |
-          echo $GITHUB_WORKSPACE
           ls -l
           rsync -av ./ /root/ros2_ws/src/mypkg/
           cd /root/ros2_ws
           rosdep update
           rosdep install -i --from-path src --rosdistro humble -y
-          cd src/mypkg
+          cd src/mypkg/mypkg
           ls -l
-          sudo bash -xv ./src/mypkg/mypkg/test/test.bash /root
+          sudo bash -xv ./src/mypkg/mypkg/mypkg/test/test.bash /root
