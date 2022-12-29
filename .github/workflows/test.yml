@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-22.04
     container: ryuichiueda/ubuntu22.04-ros2:latest
     steps:
+        run: cd..
       - name: Checkout
         uses: actions/checkout@v3
         with:
@@ -16,6 +17,7 @@ jobs:
           path: color_msgs
           
       - run: |
+          ls -l
           rsync -av ./ /root/ros2_ws/src/mypkg/
           cd /root/ros2_ws
           rosdep update
