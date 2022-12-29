@@ -25,7 +25,8 @@ jobs:
           ls -l
           cd src/mypkg
           ls -l
-          cd ../src/mypkg
+          cd ..
+          cd color_msgs
           ls -l
           
       - run: |
