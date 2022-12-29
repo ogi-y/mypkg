@@ -21,4 +21,4 @@ jobs:
           rosdep install -i --from-path src --rosdistro humble -y
           cd src
           ls -l
-          bash -xv ./src/mypkg/test/test.bash /root
+          sudo bash -xv ./src/mypkg/test/test.bash /root
