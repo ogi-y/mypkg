@@ -6,7 +6,7 @@ jobs:
     container: ryuichiueda/ubuntu22.04-ros2:latest
     steps:
       - name: Change working directory
-        working-directory: /root/ros2_ws
+        working-directory: /root/ros2_ws/src
         run: |
           ls -l
       - name: Checkout
