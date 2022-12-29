@@ -7,6 +7,8 @@ jobs:
     steps:
       - name: Change working directory
         working-directory: /root/ros2_ws/
+        run: |
+          ls -l
       - name: Checkout
         uses: actions/checkout@v3
         with:
