@@ -14,6 +14,7 @@ jobs:
           path: ../color_msgs
           
       - run: |
+          echo $GITHUB_WORKSPACE
           rsync -av ./ /root/ros2_ws/src/mypkg/
           cd /root/ros2_ws
           rosdep update
