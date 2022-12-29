@@ -5,29 +5,20 @@ jobs:
     runs-on: ubuntu-22.04
     container: ryuichiueda/ubuntu22.04-ros2:latest
     steps:
-      - name: Change working directory
-        working-directory: /root/ros2_ws
-        run: |
-          ls -l
-
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          path: src/mypkg
+          path: mypkg
       - name: Checkout another repo
         uses: actions/checkout@v3
         with:
           repository: ogi-y/color_msgs
-          path: src/color_msgs
+          path: color_msgs
       
       - name: Check directory
         run: |
           ls -l
-          cd src/mypkg
-          ls -l
-          cd ..
-          cd color_msgs
-          ls -l
+          
           
       - run: |
           ls -l
