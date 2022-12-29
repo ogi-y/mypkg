@@ -14,7 +14,7 @@ class Talker():
       msg.red = random.randint(0, 255)
       msg.green = random.randint(0, 255)
       msg.blue = random.randint(0, 255)
-      msg.color_code = str(format(msg.red, 'x')) + str(format(msg.green, 'x')) + str(format(msg.blue, 'x'))
+      #msg.color_code = str(format(msg.red, 'x')) + str(format(msg.green, 'x')) + str(format(msg.blue, 'x'))
       self.pub.publish(msg)
       self.n += 1
 

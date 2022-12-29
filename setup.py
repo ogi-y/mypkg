@@ -25,6 +25,8 @@ setup(
         'console_scripts': [
             'talker = mypkg.talker:main',
             'listener = mypkg.listener:main',
+            'changer = mypkg.rgbChanger:main',
+            'service = mypkg.service:main',
         ],
     },
 )
