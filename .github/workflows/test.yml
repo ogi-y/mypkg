@@ -11,7 +11,7 @@ jobs:
         with:
           path: mypkg
       - name: Checkout another repo
-      working-directory: /root/ros2_ws/src/
+        working-directory: /root/ros2_ws/src/
         uses: actions/checkout@v3
         with:
           repository: ogi-y/color_msgs
