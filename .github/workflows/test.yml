@@ -9,6 +9,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: ogi-y/color_msgs
+          path: color_msgs
       - name: Checkout another repo
         uses: actions/checkout@v3
         with:
