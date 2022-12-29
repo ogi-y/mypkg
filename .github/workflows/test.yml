@@ -27,6 +27,7 @@ jobs:
           ls -l
           
       - run: |
+          source ~/.bashrc
           ls -l
           rsync -av ./ /root/ros2_ws/src/mypkg/
           cd /root/ros2_ws
