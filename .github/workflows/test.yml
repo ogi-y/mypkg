@@ -20,8 +20,7 @@ jobs:
           ls -l
           
       - run: |
-          rsync -av ./ /root/ros2_ws/src/mypkg/
-          rsync -av ./ /root/ros2_ws/src/color_msgs/
+          
           cd /root/ros2_ws
           rosdep update
           rosdep install -i --from-path src --rosdistro humble -y
