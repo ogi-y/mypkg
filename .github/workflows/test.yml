@@ -24,6 +24,8 @@ jobs:
           ls -l
           
       - run: |
+          ros2 pkg install ament_cmake
+          colcon build
           rsync -av ./ /root/ros2_ws/src/
           cd /root/ros2_ws
           rosdep update
