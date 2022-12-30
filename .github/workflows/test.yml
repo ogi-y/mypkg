@@ -28,6 +28,8 @@ jobs:
           cd /root/ros2_ws
           rosdep update
           rosdep install -i --from-path src --rosdistro humble -y 
+          ros2 pkg install ament_cmake
+          colcon build
           echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
           echo "source ~/ros2_ws/install/setup.bash" >> ~/.bashrc
           echo "source ~/ros2_ws/install/local_setup.bash" >> ~/.bashrc
