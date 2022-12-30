@@ -1,5 +1,5 @@
 # mypkg
-このプログラムはロボットシステム学2022年度の講義で作成されました。
+このリポジトリはROS2のパッケージとなっています。
 
 ## plusコマンド
 ![test](https://github.com/ogi-y/robosys2022/actions/workflows/test.yml/badge.svg)
