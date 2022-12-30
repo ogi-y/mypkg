@@ -20,7 +20,8 @@ jobs:
           python-version: '3.10' 
           
       - run: |
-          rsync -av ./ /root/ros2_ws/src/
+          rsync -av ./mypkg /root/ros2_ws/src/mypkg
+          rsync -av ./color_msgs /root/ros2_ws/src/color_msgs
           cd /root/ros2_ws
           rosdep update
           rosdep install -i --from-path src --rosdistro humble -y 
