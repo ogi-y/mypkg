@@ -18,16 +18,12 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10' 
-          
-      - run: |
+
+      - name: build and test
+        run: |
           rsync -av ./mypkg /root/ros2_ws/src/mypkg
           rsync -av ./color_msgs /root/ros2_ws/src/color_msgs
           cd /root/ros2_ws
           rosdep update
-          rosdep install -i --from-path src --rosdistro humble -y 
-          echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
-          echo "source ~/ros2_ws/install/setup.bash" >> ~/.bashrc
-          echo "source ~/ros2_ws/install/local_setup.bash" >> ~/.bashrc
-          export CMAKE_PREFIX_PATH=/opt/ros/humble/share/ament_cmake/
-          ls ./src/mypkg/mypkg -l
+          rosdep install -i --from-path src --rosdistro humble -y
           bash -xv ./src/mypkg/mypkg/test/test.bash /root
