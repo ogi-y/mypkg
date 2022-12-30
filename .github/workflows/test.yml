@@ -27,7 +27,8 @@ jobs:
           rsync -av ./ /root/ros2_ws/src/
           cd /root/ros2_ws
           rosdep update
-          rosdep install -i --from-path src --rosdistro humble -y
-          ros2 pkg install ament_cmake
-          colcon build
+          rosdep install -i --from-path src --rosdistro humble -y 
+          echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+          echo "source ~/ros2_ws/install/setup.bash" >> ~/.bashrc
+          echo "source ~/ros2_ws/install/local_setup.bash" >> ~/.bashrc
           bash -xv ./src/mypkg/test/test.bash /root
