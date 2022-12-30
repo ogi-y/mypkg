@@ -21,9 +21,8 @@ jobs:
 
       - name: build and test
         run: |
-          rsync -av ./mypkg /root/ros2_ws/src/mypkg
-          rsync -av ./color_msgs /root/ros2_ws/src/color_msgs
+          rsync -av ./ /root/ros2_ws/src/
           cd /root/ros2_ws
           rosdep update
           rosdep install -i --from-path src --rosdistro humble -y
-          bash -xv ./src/mypkg/mypkg/test/test.bash /root
+          bash -xv ./src/mypkg/test/test.bash /root
