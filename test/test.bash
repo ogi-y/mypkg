@@ -3,7 +3,7 @@
 dir=~
 [ "$1" != "" ] && dir="$1"
 
-export CMAKE_PREFIX_PATH=/opt/ros/humble/share/ament_cmake/cmake
+export CMAKE_PREFIX_PATH=/opt/ros/humble/share/ament_cmake/
 cd $dir/ros2_ws
 ls ./src/ -l
 ls ./src/color_msgs/ -l
