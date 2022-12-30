@@ -29,4 +29,5 @@ jobs:
           echo "source ~/ros2_ws/install/setup.bash" >> ~/.bashrc
           echo "source ~/ros2_ws/install/local_setup.bash" >> ~/.bashrc
           export CMAKE_PREFIX_PATH=/opt/ros/humble/share/ament_cmake/
+          ls -l
           bash -xv ./src/mypkg/test/test.bash /root
