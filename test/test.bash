@@ -4,6 +4,7 @@ dir=~
 [ "$1" != "" ] && dir="$1"
 
 cd $dir/ros2_ws
+ls
 colcon build
 source $dir/.bashrc
 timeout 3 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log
