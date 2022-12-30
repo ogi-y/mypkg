@@ -4,7 +4,6 @@ dir=~
 [ "$1" != "" ] && dir="$1"
 
 cd $dir/ros2_ws
-ls -l
 ls ./src/ -l
 ls ./src/color_msgs/ -l
 ls ./src/mypkg/ -l
