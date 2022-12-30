@@ -5,20 +5,15 @@ jobs:
     runs-on: ubuntu-22.04
     container: ryuichiueda/ubuntu22.04-ros2:latest
     steps:
-      - name: Change working directory
-        working-directory: /root/ros2_ws
-        run: |
-          ls -l
-
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          path: src/mypkg
+          path: mypkg
       - name: Checkout another repo
         uses: actions/checkout@v3
         with:
           repository: ogi-y/color_msgs
-          path: src/color_msgs
+          path: color_msgs
       
       - name: Check directory
         run: |
@@ -31,6 +26,9 @@ jobs:
           
       - run: |
           ls -l
+          rsync -av ./ /root/ros2_ws/src/mypkg/mypkg
+          rsync -av ./ /root/ros2_ws/src/mypkg/color_msgs
+
           rosdep update
           rosdep install -i --from-path src --rosdistro humble -y
           bash -xv ./src/mypkg/test/test.bash /root
