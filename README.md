@@ -20,9 +20,6 @@
 *  rgbChange_service.launch.py
     * changerとserviceを実行します。
 
-## 必要なソフトウェア
-* Python 3.7～3.10
-
 ## テスト環境
 * Ubuntu 22.04.1 LTS
 
