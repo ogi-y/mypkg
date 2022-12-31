@@ -13,8 +13,8 @@ dir=~
 [ "$1" != "" ] && dir="$1"
 
 source $dir/.bashrc
-export CMAKE_PREFIX_PATH=/opt/ros/humble/share/ament_cmake/
-export CMAKE_PREFIX_PATH=/opt/ros/humble/share/ament_cmake_libraries/
+#export CMAKE_PREFIX_PATH=/opt/ros/humble/share/ament_cmake/
+#export CMAKE_PREFIX_PATH=/opt/ros/humble/share/ament_cmake_libraries/
 cd $dir/ros2_ws
 colcon build
 source $dir/.bashrc
