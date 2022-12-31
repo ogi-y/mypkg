@@ -6,9 +6,9 @@
 
 ## 各ノードの説明
 * talker
-    * red green blueに0から255の間で乱数を生成し、color_msgsパッケージのColor型を利用してメッセージを送信します。
+    * red green blueの3つの値に0から255の間で乱数を生成し、color_msgsパッケージのColor型を利用してメッセージを送信します。
 * listener
-    * Color型から受け取ったメッセージを表示します。
+    * Color型から受け取ったメッセージとその色を表示します。
 * changer
     * Queryサービスからred green blueの3つの値を受け取り、カラーコードに変換して返します。
 * service
