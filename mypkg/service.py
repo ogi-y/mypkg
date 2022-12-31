@@ -39,7 +39,7 @@ def main():
             except:
                 node.get_logger().info('呼び出し失敗')
             else:
-                node.get_logger().info("ColorCode: %s" % response.color_code)
+                node.get_logger().info("R:%d G:%d B:%d ColorCode:%s" % (r, g, b, response.color_code))
             break
 
     node.destroy_node()

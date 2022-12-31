@@ -18,10 +18,10 @@ colcon build
 #source $dir/.bashrc
 timeout 3 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log
 cat /tmp/mypkg.log |
-grep 'Listen.*Red:.*Green:.*Blue:.*色' || ng ${LINENO}
+grep "Listen Red:.*Green:.*Blue:.*色" || ng ${LINENO}
 timeout 3 ros2 launch mypkg rgbChange_service.launch.py > /tmp/mypkg.log
 cat /tmp/mypkg.log |
-grep 'ColorCode:' || ng ${LINENO}
+grep "R:.*G:.*B.*ColorCode:......" || ng ${LINENO}
 [ "$res" = 0 ] && echo OK!
 exit $res
 

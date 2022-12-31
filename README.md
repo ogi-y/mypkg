@@ -12,7 +12,8 @@
 * changer
     * Queryサービスからred green blueの3つの値を受け取り、カラーコードに変換して返します。
 * service
-    * 直前に受け取ったColor型のメッセージをそれぞれred green blueに代入し、Queryサービスを利用してその値をchangerへ渡します。
+    * 直前に受け取ったColor型のメッセージをそれぞれred green blueに代入してQueryサービスを利用しその値をchangerへ渡します。
+    * red green blueの値とchangerから返されたカラーコードを表示します。
 
 ## 各launchファイルの説明
 *  talk_listen.launch.py
