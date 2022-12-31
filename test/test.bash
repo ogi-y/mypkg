@@ -24,4 +24,3 @@ cat /tmp/mypkg.log |
 grep "R:.*G:.*B.*ColorCode:......" || ng ${LINENO}
 [ "$res" = 0 ] && echo OK!
 exit $res
-
