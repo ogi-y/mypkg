@@ -18,7 +18,7 @@
 *  talk_listen.launch.py
     * talkerとlistenerを実行します。
 *  rgbChange_service.launch.py
-    * changerとserviceを実行します。
+    * talkerとchangerとserviceを実行します。
 
 ## テスト環境
 * Ubuntu 22.04.1 LTS
