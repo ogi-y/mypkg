@@ -17,9 +17,6 @@ jobs:
 
       - name: build and test
         run: |
-          git clone https://github.com/ryuichiueda/ros2_setup_scripts
-          ./ros2_setup_scripts/setup.bash
-          source ~/.bashrc
           rsync -av ./ /root/ros2_ws/src/
           cd /root/ros2_ws
           rosdep update
