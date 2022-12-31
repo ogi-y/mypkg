@@ -5,9 +5,11 @@ jobs:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
-        python-version: ["3.7", "3.8", "3.9", "3.10"]
+        python-version: "3.10"
     container: ryuichiueda/ubuntu22.04-ros2:latest
     steps:
+      - uses: lukka/get-cmake@latest
+      - uses: lukka/run-vcpkg@v10
       - name: Checkout
         uses: actions/checkout@v3
         with:
