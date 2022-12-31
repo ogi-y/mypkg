@@ -6,6 +6,10 @@ import launch_ros.actions
 
 def generate_launch_description():
 
+    talker = launch_ros.actions.Node(
+        package='mypkg',
+        executable='talker',
+        )
     changer = launch_ros.actions.Node(
         package='mypkg',
         executable='changer',
@@ -16,4 +20,4 @@ def generate_launch_description():
         output='screen'
         )
 
-    return launch.LaunchDescription([changer, service])
+    return launch.LaunchDescription([talker, changer, service])
