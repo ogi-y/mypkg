@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2022 Yoshihiro Ogishima
+# SPDX-Licende-Identifier: BSD-3-Clause
 from setuptools import setup
 import os
 from glob import glob
